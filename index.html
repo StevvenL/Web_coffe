@@ -5,38 +5,43 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./style.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <title>Document</title>
 </head>
 
 <body>
-  <header>
-    <div class="container nav-container">
-      <img class="img1" src="./img/img1.png" alt="imagen de la marca">
-      <a href="#" class="logo">
-        <span>CAFÉ</span>
-        <span class="creps">&nbsp;& CREPS</span>
-      </a>     
-    </div>
-
-    </div>
-      <nav>
-        <ul>
-          <li><a href="#">Inicio</a></li>
-          <li><a href="#">Comprar</a></li>
-          <li><a href="#">NOSOTROS</a></li>
-          <li><a href="#">SUSCRIPCIONES</a></li>
-          <li><a href="#">BLOG</a></li>
-        </ul>
-      </nav>
-    
-      <div class="cta-buttons">
-        <a href="#" class="btn btn-secondary">ACCESO</a>
-        <a href="#" class="btn btn-primary">COMPRA AHORA</a>
+  <header class="I_header">
+    <nav class="nav bd-grid">
+      <div>
+        <img class="img1" src="./img/img1.png" alt="imagen de la marca">
+        <a href="#" class="logo">
+          <span>CAFÉ</span>
+          <span class="creps">&nbsp;& CREPS</span>
+        </a>     
       </div>
-    </div>
+      
+      <div class="nav-menu" id="nav-menu">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#inicio" class="nav-link active">INICIO</a></li>
+          <li class="nav-item"><a href="#featured" class="nav-link">COMPRAR</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">NOSOTROS</a></li>
+          <li class="nav-item"><a href="#subscription" class="nav-link">SUSCRIPCIONES</a></li>
+          <li class="nav-item"><a href="#process" class="nav-link">PROCESO</a></li>
+        </ul>
+      
+        <div class="cta-buttons">
+          <a href="#" class="btn btn-secondary">ACCESO</a>
+          <a href="#" class="btn btn-primary">COMPRA AHORA</a>
+        </div>
+      </div>
+
+      <div class="nav-toggle" id="nav-toggle">
+        <i class='bx bx-menu'></i>
+      </div>
+    </nav>
   </header>
 
-  <section class="hero">
+  <section class="hero" id="inicio">
     <div class="container hero-container">
       <div class="hero-content">
         <h1>Recién tostado, de origen ético</h1>
@@ -50,7 +55,7 @@
     </div>
   </section>
 
-  <section class="featured">
+  <section class="featured" id="featured">
     <div class="container">
       <h2 class="section-title">TOSTADOS DESTACADOS</h2>
       <div class="products-grid">
@@ -122,7 +127,7 @@
     </div>
   </section>
 
-  <section class="about">
+  <section class="about" id="about">
     <div class="container about-container">
       <div class="about-image">
         <img src="https://assets.codepen.io/406785/roaasting.jpg" alt="Coffee raosting process" />
@@ -139,7 +144,7 @@
     </div>
   </section>
 
-  <section class="process">
+  <section class="process" id="process">
     <div class="container">
       <h2 class="section-title">DE LA PLANTA A LA TAZA</h2>
       <div class="timeline">
@@ -190,7 +195,7 @@
     </div>
   </section>
 
-  <section class="subscription">
+  <section class="subscription" id="subscription">
     <div class="container">
       <h2>Que no te falte un buen café</h2>
       <p>Suscríbete para recibir café recién tostado directamente en la puerta de tu casa. Puedes pausar, omitir o
@@ -257,7 +262,7 @@
     </div>
   </footer>
 
-
+  <script src="script.js"></script>
 </body>
 
 </html>
